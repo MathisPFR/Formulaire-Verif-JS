@@ -11,15 +11,15 @@
         <form action="">
             <div>
                 <label for="prenom">Prénom</label>
-                <input type="text" name="prenom" id="prenom" placeholder="Votre Prénom">
+                <input type="text" name="prenom" id="prenom" placeholder="Votre Prénom" required>
             </div>
             <div>
                 <label for="nom">Nom</label>
-                <input type="text" name="prenom" id="prenom" placeholder="Votre nom">
+                <input type="text" name="prenom" id="prenom" placeholder="Votre nom" required>
             </div>
             <div>
                 <label for="age">Âge</label>
-                <input type="number" name="age" id="age" placeholder="Votre âge">
+                <input type="number" name="age" id="age" placeholder="Votre âge" required>
             </div>
             <div>
                     <label for="sexe">Sexe :</label>
@@ -28,23 +28,19 @@
             </div>
             <div>
                 <label for="Mail">Mail :</label>
-                <input type="email" name="Mail" id="Mail" placeholder="Votre Mail">
+                <input type="text" name="Mail" id="Mail" placeholder="Votre Mail" required>
             </div>
             <div>
                 <label for="adresse">Adresse</label>
-                <input type="text" name="adresse" id="adresse" placeholder="Votre adresse">
+                <input type="text" name="adresse" id="adresse" placeholder="Votre adresse" required>
             </div>
             <div>
                 <label for="code-postale">Code Postal</label>
-                <input type="number" name="code-postale" id="code-postale" placeholder="Votre code Postal">
+                <input type="number" name="code-postale" id="code-postale" placeholder="Votre code Postal" required>
             </div>
             <div>
                 <label for="ville">Ville</label>
-                <input type="text" name="ville" id="ville" placeholder="Votre ville">
-            </div>
-            <div>
-                <label for="adresse">Adresse</label>
-                <input type="text" name="adresse" id="adresse" placeholder="Votre adresse">
+                <input type="text" name="ville" id="ville" placeholder="Votre ville" required>
             </div>
             <div>
                 <label for="metier">Métier exercé :</label>
@@ -64,31 +60,31 @@
             </div>
             <div>
                 <label for="date-naissance">Date de naissance :</label> 
-                <input type="date" name="date-naissance" id="date-naissance" placeholder="jj/mm/aaaa">
+                <input type="date" name="date-naissance" id="date-naissance" placeholder="jj/mm/aaaa" required>
             </div>
             <div>
                 <label for="pays-naissance">Pays de naissance</label>
-                <input type="text" name="pays-naissance" id="pays-naissance" placeholder="Votre pays de naissance">
+                <input type="text" name="pays-naissance" id="pays-naissance" placeholder="Votre pays de naissance" required>
             </div>
             <div>
                 <label for="secu-number">Numéro de sécurité social :</label> 
-                <input type="number" name="secu-number" id="secu-number" placeholder="Votre numéro de sécurité sociale">
+                <input type="number" name="secu-number" id="secu-number" placeholder="Votre numéro de sécurité sociale" required>
             </div>
             <div>
                 <label for="pass-number">Numéro du passeport :</label> 
-                <input type="number" name="pass-number" id="pass-number" placeholder="Votre numéro de passeport">
+                <input type="text" name="pass-number" id="pass-number" placeholder="Votre numéro de passeport" required>
             </div>
             <div>
                 <label for="date-passeport-dev">Date de délivrance du passeport :</label> 
-                <input type="date" name="date-passeport-dev" id="date-passeport-dev" placeholder="jj/mm/aaaa">
+                <input type="date" name="date-passeport-dev" id="date-passeport-dev" placeholder="jj/mm/aaaa" required>
             </div>
             <div>
                 <label for="date-passeport-val">Date de validité du passeport :</label> 
-                <input type="date" name="date-passeport-val" id="date-passeport-val" placeholder="jj/mm/aaaa">
+                <input type="date" name="date-passeport-val" id="date-passeport-val" placeholder="jj/mm/aaaa" required>
             </div>
             <div>
                 <input type="reset" value="Effacer">
-                <input type="submit" value="Envoyer">
+                <button type="submit" value="Envoyer" id="submit">Envoyer</button>
             </div>
         </form>
     </section>
