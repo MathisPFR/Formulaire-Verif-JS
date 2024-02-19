@@ -7,84 +7,93 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
-        <form action="">
-            <div>
-                <label for="prenom">Prénom</label>
-                <input type="text" name="prenom" id="prenom" placeholder="Votre Prénom" required>
-            </div>
-            <div>
-                <label for="nom">Nom</label>
-                <input type="text" name="prenom" id="prenom" placeholder="Votre nom" required>
-            </div>
-            <div>
-                <label for="age">Âge</label>
-                <input type="number" name="age" id="age" placeholder="Votre âge" required>
-            </div>
-            <div>
-                    <label for="sexe">Sexe :</label>
-                    <input type="radio" name="homme" value="homme" id="homme">Homme
-                    <input type="radio" name="femme" value="femme" id="femme">Femme
-            </div>
-            <div>
-                <label for="Mail">Mail :</label>
-                <input type="text" name="Mail" id="Mail" placeholder="Votre Mail" required>
-            </div>
-            <div>
-                <label for="adresse">Adresse</label>
-                <input type="text" name="adresse" id="adresse" placeholder="Votre adresse" required>
-            </div>
-            <div>
-                <label for="code-postale">Code Postal</label>
-                <input type="number" name="code-postale" id="code-postale" placeholder="Votre code Postal" required>
-            </div>
-            <div>
-                <label for="ville">Ville</label>
-                <input type="text" name="ville" id="ville" placeholder="Votre ville" required>
-            </div>
-            <div>
-                <label for="metier">Métier exercé :</label>
-                <select id="metier" name="metier">
-                    <option value="" selected disabled>Votre métier</option>
-                    <option value="metier-1">Métier 1</option>
-                    <option value="metier-2">Métier 2</option>
-                </select>
-            </div>
-            <div>
-                <label for="nationalite">Nationalité :</label>
-                <select id="nationalite" name="nationalite">
-                    <option value="" selected disabled>Votre nationalité</option>
-                    <option value="nationalite-1">nationalite 2</option>
-                    <option value="nationalite-2">nationalite 2</option>
-                </select>
-            </div>
-            <div>
-                <label for="date-naissance">Date de naissance :</label> 
-                <input type="date" name="date-naissance" id="date-naissance" placeholder="jj/mm/aaaa" required>
-            </div>
-            <div>
-                <label for="pays-naissance">Pays de naissance</label>
-                <input type="text" name="pays-naissance" id="pays-naissance" placeholder="Votre pays de naissance" required>
-            </div>
-            <div>
-                <label for="secu-number">Numéro de sécurité social :</label> 
-                <input type="number" name="secu-number" id="secu-number" placeholder="Votre numéro de sécurité sociale" required>
-            </div>
-            <div>
-                <label for="pass-number">Numéro du passeport :</label> 
-                <input type="text" name="pass-number" id="pass-number" placeholder="Votre numéro de passeport" required>
-            </div>
-            <div>
-                <label for="date-passeport-dev">Date de délivrance du passeport :</label> 
-                <input type="date" name="date-passeport-dev" id="date-passeport-dev" placeholder="jj/mm/aaaa" required>
-            </div>
-            <div>
-                <label for="date-passeport-val">Date de validité du passeport :</label> 
-                <input type="date" name="date-passeport-val" id="date-passeport-val" placeholder="jj/mm/aaaa" required>
-            </div>
-            <div>
-                <input type="reset" value="Effacer">
-                <button type="submit" value="Envoyer" id="submit">Envoyer</button>
+    <section class="form-section">
+        <div class="grid-col">
+            <form action="">
+                <div class="grid-form">
+                    <label for="prenom" >Prénom</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Votre Prénom" class="formstyle"  required>
+                </div>
+                <div class="grid-form">
+                    <label for="nom" >Nom</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Votre nom" class="formstyle"  required>
+                </div>
+                <div class="grid-form">
+                    <label for="age" >Âge</label>
+                    <input type="number" name="age" id="age" placeholder="Votre âge" class="formstyle"  required>
+                </div>
+                <div class="grid-form">
+                        <label for="sexe" >Sexe :</label>
+                        <input type="radio" name="sexe" value="homme" id="homme" class="formstyle-radio">Homme
+                        <input type="radio" name="sexe" value="femme" id="femme" class="formstyle-radio" >Femme
+                </div>
+                <div class="grid-form">
+                    <label for="Mail" >Mail :</label>
+                    <input type="text" name="Mail" id="Mail" placeholder="Votre Mail" class="formstyle"  required>
+                </div>
+                <div class="grid-form">
+                    <label for="adresse"  >Adresse</label>
+                    <input type="text" name="adresse" id="adresse" placeholder="Votre adresse" class="formstyle"  required>
+                </div>
+                <div class="grid-form">
+                    <label for="code-postale" >Code Postal</label>
+                    <input type="number" name="code-postale" id="code-postale" placeholder="Votre code Postal" class="formstyle"  required>
+                </div>
+                <div class="grid-form">
+                    <label for="ville" >Ville</label>
+                    <input type="text" name="ville" id="ville" placeholder="Votre ville" class="formstyle"  required>
+                </div>
+        </div>
+
+            <div class="grid-col2">
+                <div class="grid-form2">
+                    <label for="metier">Métier exercé :</label>
+                    <select id="metier" name="metier">
+                        <option value="" selected disabled>Votre métier</option>
+                        <option value="metier-1">Métier 1</option>
+                        <option value="metier-2">Métier 2</option>
+                    </select>
+                </div>
+                <div class="grid-form2">
+                    <label for="nationalite">Nationalité :</label>
+                    <select id="nationalite" name="nationalite"  >
+                        <option value="" selected disabled>Votre nationalité</option>
+                        <option value="nationalite-1">nationalite 2</option>
+                        <option value="nationalite-2">nationalite 2</option>
+                    </select>
+                </div>
+                <div class="grid-form2">
+                    <label for="date-naissance" >Date de naissance :</label> 
+                    <input type="date" name="date-naissance" id="date-naissance" placeholder="jj/mm/aaaa" class="formstyle"  required>
+                </div>
+                <div class="grid-form2">
+                    <label for="pays-naissance" >Pays de naissance</label>
+                    <input type="text" name="pays-naissance" id="pays-naissance" placeholder="Votre pays de naissance" class="formstyle" required>
+                </div>
+                <div class="grid-form2">
+                    <label for="secu-number" >Numéro de sécurité social :</label> 
+                    <input type="number" name="secu-number" id="secu-number" placeholder="Votre numéro de sécurité sociale" class="formstyle"  required>
+                </div>
+                <div class="grid-form2">
+                    <label for="pass-number" >Numéro du passeport :</label> 
+                    <input type="text" name="pass-number" id="pass-number" placeholder="Votre numéro de passeport" class="formstyle"  required>
+                </div>
+                <div class="grid-form2">
+                    <label for="date-passeport-dev" >Date de délivrance du passeport :</label> 
+                    <input type="date" name="date-passeport-dev" id="date-passeport-dev" placeholder="jj/mm/aaaa" class="formstyle"  required>
+                </div>
+                <div class="grid-form2">
+                    <label for="date-passeport-val" >Date de validité du passeport :</label> 
+                    <input type="date" name="date-passeport-val" id="date-passeport-val" placeholder="jj/mm/aaaa" class="formstyle"  required>
+                </div>
+                <div>
+                    <div class="reset">
+                        <input type="reset" value="Effacer">
+                    </div>
+                    <div class="submit-btn">
+                        <button type="submit" value="Envoyer" id="submit">Envoyer</button>
+                    </div>
+                </div>
             </div>
         </form>
     </section>
